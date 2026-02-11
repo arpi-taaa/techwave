@@ -41,43 +41,46 @@
         </div>
     </header>
     <!-- Hero Section -->
-    <section>
-        <div class="relative w-full">
+    <section class="relative w-full bg-[#0F172A] overflow-hidden">
+        <img src="./assets/hero-bg.png" class="w-full h-[600px] md:h-[700px] lg:h-auto object-cover" alt="">
 
-            <img src="./assets/hero-bg.png" class="w-full h-[40vh] sm:h-[70vh] lg:h-auto">
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
 
-            <img src="./assets/hero-circle.png" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[80%]
-      w-[180px] sm:w-[180px] md:w-[240px] lg:w-[320px]">
+            <div class="relative flex justify-center items-center mb-6 md:mb-10 translate-y-8">
+                <img src="./assets/hero-circle.png" class="w-[180px] md:w-[280px] lg:w-[350px]" alt="">
 
-            <img src="./assets/microphone.png" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[115%]
-      w-[60px] sm:w-[120px] md:w-[160px] lg:w-[100px]">
+                <img src="./assets/microphone.png"
+                    class="absolute w-[60px] md:w-[100px] lg:w-[120px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    alt="">
 
-            <h3
-                class="inline-block bg-green-500 text-black font-bold rounded-full text-[10px] px-2 py-[2px] sm:text-xs sm:px-3 sm:py-1
-lg:text-sm lg:px-4 lg:py-2 absolute top-1/4 left-2/3 -translate-x-[100%] -translate-y-[220%] lg:top-[24%] lg:left-[58%] lg:-translate-y-[160%]">
-                NEW
-            </h3>
+                <span
+                    class="absolute top-2.5 lg:top-6 right-2.5 lg:right-12 bg-green-500 text-black font-bold rounded-full text-[10px] md:text-xs px-3 py-1">
+                    NEW
+                </span>
+            </div>
 
-            <h3
-                class="font-bold text-white text-4xl lg:text-6xl absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-[50%]">
-                TechWave</h3>
-            <p
-                class="w-2/3 text-xs text-gray-400 absolute top-[60%] lg:top-2/3 left-1/2 -translate-x-[50%] translate-y-[180%] lg:translate-y-[250%] text-center">
-                Your daily dose of tech insights, productivity hacks, and personal growth</p>
-            <button
-                class="items-center flex gap-2 px-5 py-2 text-white text-xs lg:text-base rounded-full
-         bg-[linear-gradient(12deg,#F7E93F,#FB09B4,#9100F8)]
-         hover:scale-105 duration-300
-         shadow-lg hover:shadow-xl absolute top-2/3 left-1/2 -translate-x-[90%] translate-y-[220%] lg:translate-y-[200%] text-center">
-                <img src="./assets/spotify.png" alt="">
-                Listen On Spotify</button>
-            <button
-                class="items-center flex gap-2 px-5 py-2 text-white text-xs lg:text-base rounded-full
-         border border-[#00FF88]
-         hover:scale-105 duration-300
-         shadow-lg hover:shadow-xl absolute top-2/3 left-1/2 translate-x-[20%] translate-y-[240%] lg:translate-y-[190%] text-center">
-                <img src="./assets/message.png" alt="">
-                Subscribe</button>
+            <div class="max-w-2xl">
+                <h3 class="font-bold text-white text-3xl md:text-5xl lg:text-6xl mb-4 tracking-tight">
+                    TechWave
+                </h3>
+                <p class="text-gray-400 text-sm md:text-base lg:text-lg mb-8 px-6">
+                    Your daily dose of tech insights, productivity hacks, and personal growth.
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+                <button
+                    class="flex items-center gap-2 px-8 py-3 text-white text-sm md:text-base rounded-full bg-[linear-gradient(12deg,#F7E93F,#FB09B4,#9100F8)] hover:scale-105 duration-300 shadow-lg whitespace-nowrap">
+                    <img src="./assets/spotify.png" class="w-5 h-5" alt="">
+                    Listen On Spotify
+                </button>
+
+                <button
+                    class="flex items-center gap-2 px-8 py-3 text-white text-sm md:text-base rounded-full border border-[#00FF88] hover:bg-[#00FF88]/10 hover:scale-105 duration-300 shadow-lg whitespace-nowrap">
+                    <img src="./assets/message.png" class="w-5 h-5" alt="">
+                    Subscribe
+                </button>
+            </div>
         </div>
     </section>
     <!-- About PodCast -->
@@ -92,20 +95,20 @@ lg:text-sm lg:px-4 lg:py-2 absolute top-1/4 left-2/3 -translate-x-[100%] -transl
             </p>
             <div class="bg-[#1A0B2E] grid grid-cols-2 lg:grid-cols-4 py-4">
                 <div class="my-4">
-                    <h1 class="font-[800] text-green-500 text-center text-4xl">150k+</h1>
+                    <h1 class="font-[800] text-green-400 text-center text-4xl">150k+</h1>
                     <p class="text-white font-thin text-sm text-center mt-2">MONTHLY LISTENERS</p>
                 </div>
                 <div class="my-4">
-                    <h1 class="font-[800] text-green-500 text-center text-4xl">200+</h1>
+                    <h1 class="font-[800] text-green-400 text-center text-4xl">200+</h1>
                     <p class="text-white font-thin text-sm text-center mt-2">EPISODES PUBLISHED</p>
                 </div>
                 <div class="my-4">
-                    <h1 class="font-bold text-green-500 flex gap-2 text-4xl items-center justify-center">4.9 <img
+                    <h1 class="font-bold text-green-400 flex gap-2 text-4xl items-center justify-center">4.9 <img
                             src="./assets/star (1).png" class="w-[30px] h-[30px]" alt=""></h1>
                     <p class="text-white font-thin text-sm text-center mt-2">AVERAGE RATING</p>
                 </div>
                 <div class="my-4">
-                    <h1 class="font-[800] text-green-500 text-center text-4xl">50+</h1>
+                    <h1 class="font-[800] text-green-400 text-center text-4xl">50+</h1>
                     <p class="text-white font-thin text-sm text-center mt-2">INDUSTRY EXPERTS</p>
                 </div>
             </div>
@@ -285,35 +288,49 @@ lg:text-sm lg:px-4 lg:py-2 absolute top-1/4 left-2/3 -translate-x-[100%] -transl
         </div>
     </section>
     <!-- Footer -->
-    <footer>
-        <div class="relative">
-            <img src="./assets/footer-bg.png" class="w-full h-[30vh] lg:h-[40vh]" alt="">
-            <div class="text-white absolute top-[8%] md:top-[16%] lg:top-[22%] md:left-[27%] lg:left-[32%]">
-                <h6 class="text-4xl lg:text-5xl font-bold text-center py-6">Tech<span
+    <footer class="bg-[#1A0B2E] text-white">
+        <div class="relative w-full min-h-[350px] md:min-h-[400px] flex items-center justify-center overflow-hidden">
+
+            <img src="./assets/footer-bg.png" class="absolute inset-0 w-full h-full object-cover" alt="">
+
+            <div class="relative z-10 flex flex-col items-center text-center px-6 w-full">
+
+                <h6 class="text-3xl lg:text-5xl font-bold mb-8">
+                    Tech<span
                         class="bg-[linear-gradient(12deg,#F7E93F,#FB09B4,#9100F8)] bg-clip-text text-transparent">Wave</span>
                 </h6>
-                <div class="grid grid-cols-2 lg:flex lg:justify-center gap-6 lg:gap-12 mb-2">
-                    <div class="flex gap-3 items-center justify-center ml-20 md:ml-0">
-                        <img src="./assets/spotify.png" alt="">
-                        <h1 class="text-gray-400">Spotify</h1>
+
+                <div class="grid grid-cols-2 lg:flex lg:flex-row gap-6 md:gap-10 lg:gap-12 mb-10">
+
+                    <div class="flex gap-3 items-center justify-center">
+                        <img src="./assets/spotify.png" class="w-5 h-5" alt="">
+                        <h1 class="text-gray-400 text-sm md:text-base">Spotify</h1>
                     </div>
-                    <div class="flex gap-3 items-center justify-center -ml-20 md:ml-0">
-                        <img src="./assets/apple-podcast.png" alt="">
-                        <h1 class="text-gray-400">Apple Podcasts</h1>
+
+                    <div class="flex gap-3 items-center justify-center">
+                        <img src="./assets/apple-podcast.png" class="w-5 h-5" alt="">
+                        <h1 class="text-gray-400 text-sm md:text-base">Apple Podcasts</h1>
                     </div>
-                    <div class="flex gap-3 items-center justify-center ml-28 md:ml-0">
-                        <img src="./assets/youtube-podcast.png" alt="">
-                        <h1 class="text-gray-400">YouTube</h1>
+
+                    <div class="flex gap-3 items-center justify-center">
+                        <img src="./assets/youtube-podcast.png" class="w-5 h-5" alt="">
+                        <h1 class="text-gray-400 text-sm md:text-base">YouTube</h1>
                     </div>
-                    <div class="flex gap-3 items-center justify-center -ml-24 md:ml-0">
-                        <img src="./assets/twitter.png" alt="">
-                        <h1 class="text-gray-400">Twitter</h1>
+
+                    <div class="flex gap-3 items-center justify-center">
+                        <img src="./assets/twitter.png" class="w-5 h-5" alt="">
+                        <h1 class="text-gray-400 text-sm md:text-base">Twitter</h1>
                     </div>
                 </div>
-                <p class="flex justify-center items-center gap-2 text-gray-400 pt-6"><img src="./assets/copyright.png"
-                        class="h-[20px] w-[20px]" alt="">2026 TechWave Podcast. All rights reserved.</p>
+
+                <p
+                    class="flex justify-center items-center gap-2 text-gray-400 text-xs md:text-sm border-t border-white/10 pt-6 w-full max-w-md">
+                    <img src="./assets/copyright.png" class="h-4 w-4" alt="">
+                    2026 TechWave Podcast. All rights reserved.
+                </p>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
